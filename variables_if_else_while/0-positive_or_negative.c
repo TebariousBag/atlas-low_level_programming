@@ -2,12 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - main block 
  * Description: Prints if the random number is + - =
  * Return: 0
  *
- * */
+ * /
 
 int main(void)
 {
