@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /*
+ * function main:
  * main: main block
  * description: The main function prints what was asked
  * return: 0
