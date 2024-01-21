@@ -14,11 +14,11 @@ int main(void)
 	ld = n % 10
 
 	if (ld > 5);
-	printf("Last digit is greater than 5"
+	printf("Last digit of %i is %i is greater than 5");
 	else if (ld == 0);
-	printf("and is 0");
+	printf("Last digit of %i is %i and is 0");
 	else if(ld < 6);
-	printf("and is less than 6");
-	/* your code goes there */
+	printf("Last digit of %i is %i and is less than 6");
+	
 	return (0);
 }
