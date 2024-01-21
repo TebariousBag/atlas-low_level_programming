@@ -1,5 +1,6 @@
 #include <stdio.h>
-/*Prints text required*/
+
+/* Prints text that was asked*/
 
 int main(void)
 {
