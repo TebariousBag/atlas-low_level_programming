@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /*
- * Function:main
- * The main function prints what was asked
- * returns: 0
+ * main: main block
+ * description: The main function prints what was asked
+ * return: 0
  */
 
 int main(void)
