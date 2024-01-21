@@ -2,7 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/* main -- 
+ * Description: Prints if the random number is + - =
+ * Return: 0
+ * */
 
 int main(void)
 {
@@ -11,12 +14,14 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if (n>0)
+	if ( n > 0 )
 	printf("%i is positive\n", n);
-	else if (n==0)
+
+	else if ( n == 0 )
 	printf("%i is zero\n", n);
-	else (%i<0)
-	printf("%i is zero\n", n);	
+
+	else if ( n < 0 )
+	printf("%i is negative\n", n);	
 	
 	return (0);
 }
