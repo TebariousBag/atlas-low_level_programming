@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/* Prints text that was asked*/
+/*
+ * Function:main
+ * The main function prints what was asked
+ * returns: 0
+ */
 
 int main(void)
 {
