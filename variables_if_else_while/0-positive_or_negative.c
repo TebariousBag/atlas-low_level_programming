@@ -12,11 +12,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	if (n>0)
-	puts("%i is positive");
-	else (n==0)
-	puts("%i is zero");
-	elseif (%i<0)
-	puts("%i is zero");	
+	printf("%i is positive\n", n);
+	else if (n==0)
+	printf("%i is zero\n", n);
+	else (%i<0)
+	printf("%i is zero\n", n);	
 	
 	return (0);
 }
