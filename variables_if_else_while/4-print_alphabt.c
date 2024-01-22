@@ -1,8 +1,9 @@
 #include <stdio.h>
-/*
- * 
+/**
+ * main - main block
+ * Description:
+ * Return: 0
 */
-
 int main(void)
 {
 	char c = 'a';

@@ -1,16 +1,18 @@
 #include <stdio.h>
-/*
+/**
+ * main - main block
+ * Description:
+ * Return: 0
 */
 int main(void)
 {
-
-        char c = 'a';
+	char c = 'a';
 
         while (c <= 'z')
-        {
-                putchar(c);
-                c++;
-        }
+	{
+		putchar(c);
+		c++;
+	}
 
 	c = 'A';
 
@@ -20,7 +22,7 @@ int main(void)
 		c++;
 	}
 
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
 
