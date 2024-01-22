@@ -1,14 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/*
- * main - main block 
- * Description: Prints if the random number is + - =
+/**
+ * main - main block
+ * Description:
  * Return: 0
- *
- * */
-
+*/
 int main(void)
 {
 	int n;
@@ -21,6 +18,6 @@ int main(void)
 		printf("%i is zero\n", n);
 	else if (n<0)
 		printf("%i is negative\n", n);	
-	
+
 	return (0);
 }
