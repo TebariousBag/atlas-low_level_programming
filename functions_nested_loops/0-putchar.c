@@ -1,19 +1,24 @@
-#include "main.h"
-
+#include <main.h>
 /**
- * print_alphabet - prints the alphabet, in lowercase, followed by a new line
- */
-void print_alphabet(void)
+ * main - main block
+ * Description:
+ * Return: 0
+*/
+
+int main(void)
+
+	int _putchar(char character);
+
 {
-	char ch;
+        _putchar('_');
+        _putchar('p');
+        _putchar('u');
+        _putchar('t');
+        _putchar('c');
+        _putchar('h');
+        _putchar('a');
+        _putchar('r');
+        _putchar('\n');
 
-	ch = 'a';
-
-	while (ch <= 'z')
-	{
-		_putchar(ch);
-		ch++;
-	}
-
-	_putchar('\n');
+        return (0);
 }
