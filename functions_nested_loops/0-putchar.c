@@ -1,13 +1,11 @@
 #include "main.h"
 /**
- * main - main block
+ * main - function prints _putchar
  * Description:
  * Return: 0
 */
 
 int main(void)
-
-	int _putchar(char character);
 
 {
         _putchar('_');
