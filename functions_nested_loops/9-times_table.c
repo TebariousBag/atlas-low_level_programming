@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *times_table - function prints times table of 9
-Return: 0
+Return: times table of 9
  */
 void times_table(void)
 {
