@@ -4,12 +4,13 @@
  *@i: parameter
 Return: -a or a
  */
-int _abs(int)
+int _abs(int i)
 {
 	if (i < 0)
 		return (-i);
-	else
+	else if (i >= 0 )
 	{
 		return (i);
 	}
+	return (0);
 }
