@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- *
+ * print_triangle - function prints a triangle
+ * Return: void
  */
 
 void print_triangle(int size)
@@ -16,7 +17,7 @@ void print_triangle(int size)
 
 		for (i = 1 ; i <= size; i++)
 		{
-			for (t = i ; t <= size ; t++)
+			for (t = i ; t < size ; t++)
 			{
 				_putchar(' ');
 			}
