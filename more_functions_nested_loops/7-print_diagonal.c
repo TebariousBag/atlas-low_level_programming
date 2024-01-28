@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- *
+ * print_diagonal - function prints diagonal lines
+ * @n: parameter for how many /
+ * Return: void
  */
 
 void print_diagonal(int n)
