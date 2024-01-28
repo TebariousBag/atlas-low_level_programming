@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - function prints numbers 1-100 except multiples of 3 and 5, then its replaced with fizz or buzz
+ * main - function prints numbers 1-100 except multiples of 3 and 5
  * Return: void
  */
 
