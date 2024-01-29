@@ -4,7 +4,7 @@
 /**
  * _strcpy - function copies string to dest
  * @dest: destination
- * src: is the source of the string
+ * @src: is the source of the string
  * Return: the src string to dest
  */
 
