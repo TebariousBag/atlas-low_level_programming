@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _strcat - function concatenates two strings, which means joining them into one
+* _strcat - function joins tw strings
 * @dest: parameter 1
 * @src: parameter 2
 * Return: dest
