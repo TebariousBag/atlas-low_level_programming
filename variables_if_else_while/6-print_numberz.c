@@ -2,7 +2,7 @@
 
 /**
  * main - numberz
- * Description: print single digit numbers of base 10 withou using variable char
+ * Description: print single digit numbers of base 10
  * Return: 0
  */
 
