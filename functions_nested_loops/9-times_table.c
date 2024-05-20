@@ -18,14 +18,14 @@ void times_table(void)
 			{
 				_putchar(result + '0');
 			}
-			if (column < 10 && column != 0)
+			if (result < 10 && column != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(result + '0');
 			}
-			else if (column >= 10)
+			else if (result >= 10)
 			{
 					_putchar(',');
 					_putchar(' ');
