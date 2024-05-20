@@ -6,7 +6,7 @@
  * Return: is ether a - or a positive number
  */
 
-int _abs(distance)
+int _abs(int distance)
 {
 	if (distance >= 0)
 	{
