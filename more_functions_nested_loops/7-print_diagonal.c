@@ -12,10 +12,14 @@ void print_diagonal(int n)
 		_putchar('\n');
 	else
 	{
+		int spaces
+
 		while (n > 0)
 		{
-			_putchar(' ');
 			n--;
+			spaces++;
+			 for (spaces; spaces > 0; spaces--)
+				 _putchar(' ')
 		}
 			_putchar('\\');
 			_putchar('\n');
