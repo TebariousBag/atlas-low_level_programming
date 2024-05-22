@@ -12,7 +12,7 @@ void print_diagonal(int n)
 		_putchar('\n');
 	else
 	{
-		int spaces
+		int spaces;
 
 		while (n > 0)
 		{
