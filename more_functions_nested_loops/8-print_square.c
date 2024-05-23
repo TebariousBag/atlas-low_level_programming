@@ -15,9 +15,9 @@ void print_square(int size)
 		int count;
 		int hash;
 
-		for (count =0; count < size; count++)
+		for (count = 1; count <= size; count++)
 		{
-			for (hash = 0; hash < count; hash++)
+			for (hash = 1; hash <= count; hash++)
 				_putchar('#');
 			_putchar('\n');
 		}
