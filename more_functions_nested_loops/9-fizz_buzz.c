@@ -27,7 +27,7 @@ int main(void)
 		}
 		else
 		{
-			printf(" %i ", num);
+			printf("%i ", num);
 		}
 		num++;
 	}
