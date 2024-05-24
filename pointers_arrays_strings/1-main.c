@@ -1,4 +1,3 @@
-julien@ubuntu:~/$ cat 1-main.c
 #include "main.h"
 #include <stdio.h>
 
@@ -19,8 +18,3 @@ int main(void)
     printf("a=%d, b=%d\n", a, b);
     return (0);
 }
-julien@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-swap.c -o 1-swap
-julien@ubuntu:~/$ ./1-swap 
-a=98, b=42
-a=42, b=98
-julien@ubuntu:~/$
