@@ -18,7 +18,6 @@ void rev_string(char *s)
 		temp = s[index];
 
 		s[index] = s[count - 1 - index];
-		s[count - 1 - index] = temp
-		_putchar(s[index]);
+		s[count - 1 - index] = temp;
 	}
 }
