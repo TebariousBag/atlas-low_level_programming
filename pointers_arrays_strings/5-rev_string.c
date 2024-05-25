@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
  * rev_string - reverses a string
  * @s: parameters
  * Return: void
  */
-
 void rev_string(char *s)
 {
 	int index = 0;
@@ -17,15 +15,13 @@ void rev_string(char *s)
 		index++;
 		count++;
 	}
-
 	index --;
-	count--;
-	_putchar('\n');
-
+	while (s[index] != 0)
 	while (s[count] >= 0)
 	{
 		_putchar(s[index]);
 		index--;
+		_putchar(s[count]);
 		count--;
 	}
 	_putchar('\n');
