@@ -19,11 +19,13 @@ void rev_string(char *s)
 	}
 
 	index --;
+	count--;
 	_putchar('\n');
 
 	while (s[count] >= 0)
 	{
-		_putchar(s[count]);
+		_putchar(s[index]);
+		index--;
 		count--;
 	}
 	_putchar('\n');
