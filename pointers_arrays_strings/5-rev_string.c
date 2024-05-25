@@ -10,9 +10,13 @@ void rev_string(char *s)
 	int count;
 
 	for (index = 0; s[index] != '\0'; index++)
+	{
 		count++;
+	}
 
-	for (index = count -1; index >= 0; indexx--)
+	for (index = count -1; index >= 0; index--)
+	{
 		_putchar(s[index]);
-		_putchar('\n');
+	}
+	_putchar('\n');
 }
