@@ -12,6 +12,7 @@ void rev_string(char *s)
 
 	while (s[index] != '\0')
 	{
+		_putchar(s[index]);
 		index++;
 	}
 	index --;
