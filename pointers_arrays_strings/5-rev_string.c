@@ -7,7 +7,7 @@
 void rev_string(char *s)
 {
 	int index;
-	int count;
+	int count = 0;
 
 	for (index = 0; s[index] != '\0'; index++)
 		count++;
