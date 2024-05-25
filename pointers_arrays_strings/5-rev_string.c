@@ -6,20 +6,13 @@
  */
 void rev_string(char *s)
 {
-	char rev = s[0];
-	int holder = 0;
-	int count = 0;
+	int index;
+	int count;
 
-	while (s[count] != '\0')
-	{
+	for (index = 0; s[index] != '\0'; index++)
 		count++;
-	}
-	while (holder < count)
-	{
-		holder++;
-		count--;
-		rev = s[holder];
-		s[holder] = s[count];
-		s[count] = rev;
-	}
+
+	for (index = count -1; index >= 0; indexx--)
+		_putchar(s[index]);
+		_putchar('\n');
 }
