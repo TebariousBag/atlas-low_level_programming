@@ -19,9 +19,13 @@ int _atoi(char *s)
 		sign *= -1;
 		s++;
 	}
-	else if (*s == '+' || *s == '-')
+	while (*s == '+' || *s == '-')
 	{
 		s++;
+		if (*s == ' ')
+		{
+			s++;
+		}
 	}
 	while (*s >= '0' && *s <= '9')
 	{
