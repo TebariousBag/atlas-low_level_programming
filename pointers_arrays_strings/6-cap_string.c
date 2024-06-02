@@ -10,7 +10,7 @@ char *cap_string(char *taco)
 {
 	int count = 0;
 
-	while (taco[count != '\0']
+	while (taco[count] != '\0')
 	{
 		while (!(taco[count] >= 'a' && taco[count] <= 'z')
 			count++;
