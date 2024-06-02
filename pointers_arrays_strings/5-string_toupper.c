@@ -16,6 +16,6 @@ char *string_toupper(char *taco)
 			taco[count] = taco[count] - 32;
 		count++;
 	}
-	
+
 	return (taco);
 }
