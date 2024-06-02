@@ -6,7 +6,7 @@
  *Return: taco
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *taco)
 {
 	int count = 0;
 
