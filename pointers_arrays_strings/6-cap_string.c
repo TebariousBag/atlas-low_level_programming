@@ -8,30 +8,27 @@
 
 char *cap_string(char *taco)
 {
-	int count = 0;
+	int count;
+	int counter;
 
-	while (taco[count] != '\0')
+	char spec[13] = {' ', '\t', '\n', ',', ';',
+		'.', '!', '?', '"', '(', ')', '{', '}'};
+
+	for (count = 0; taco[count] != '\0'; count++)
 	{
-		while (!(taco[count] >= 'a' && taco[count] <= 'z'))
-			count++;
-		if (taco[count - 1] == ' ' ||
-			taco[count - 1] == '\t' ||
-			taco[count - 1] == '\n' ||
-			taco[count - 1] == ',' ||
-			taco[count - 1] == ';' ||
-			taco[count - 1] == '.' ||
-			taco[count - 1] == '!' ||
-			taco[count - 1] == '?' ||
-			taco[count - 1] == '"' ||
-			taco[count - 1] == '(' ||
-			taco[count - 1] == ')' ||
-			taco[count - 1] == '{' ||
-			taco[count - 1] == '}' ||
-			count == 0)
-
+		if (count == 0 && taco[count] >= 'a' && taco[count] <= 'z')
 			taco[count] -= 32;
-			count++;
 
+		for (counter = 0; counter < 13; counter++)
+		{
+			if (taco[count] == spec[counter])
+			{
+				if (taco[count + 1] >= 'a' && taco[count + 1] <= 'z')
+				{
+					taco[count + 1] -= 32;
+				}
+			}
+		}
 	}
 
 	return (taco);
