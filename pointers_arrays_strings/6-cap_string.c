@@ -13,9 +13,7 @@ char *cap_string(char *taco)
 	while (taco[count] != '\0')
 	{
 		while (!(taco[count] >= 'a' && taco[count] <= 'z'))
-		{
 			count++;
-		}
 		if (taco[count - 1] == ' ' ||
 			taco[count - 1] == '\t' ||
 			taco[count - 1] == '\n' ||
@@ -30,10 +28,10 @@ char *cap_string(char *taco)
 			taco[count - 1] == '{' ||
 			taco[count - 1] == '}' ||
 			count == 0)
-		{
+
 			taco[count] -= 32;
 			count++;
-		}
+
 	}
 
 	return (taco);
