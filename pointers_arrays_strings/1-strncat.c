@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * char *_strncat - joins two strings but with n bytes
+ * _strncat - joins two strings but with n bytes
  * @dest: destination
- * @char: source
+ * @src: source
  * @n: the number of bytes
  * Return: dest
  */
