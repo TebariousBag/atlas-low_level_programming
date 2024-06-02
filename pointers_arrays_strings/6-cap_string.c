@@ -12,7 +12,7 @@ char *cap_string(char *taco)
 
 	while (taco[count] != '\0')
 	{
-		while (!(taco[count] >= 'a' && taco[count] <= 'z')
+		while (!(taco[count] >= 'a' && taco[count] <= 'z'))
 			count++;
 		if (taco[count - 1] == ' ' ||
 			taco[count - 1] == '\t' ||
