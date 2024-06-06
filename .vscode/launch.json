@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/tebariousbag/school/atlas-low_level_programming",
-      "program": "/Users/tebariousbag/school/atlas-low_level_programming/build/Debug/outDebug"
+      "cwd": "/Users/tebariousbag/school/atlas-low_level_programming/recursion",
+      "program": "/Users/tebariousbag/school/atlas-low_level_programming/recursion/build/Debug/outDebug"
     }
   ]
 }
