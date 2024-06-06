@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/tebariousbag/school/atlas-low_level_programming/hello_world",
-      "program": "/Users/tebariousbag/school/atlas-low_level_programming/hello_world/build/Debug/outDebug"
+      "cwd": "/Users/tebariousbag/school/atlas-low_level_programming",
+      "program": "/Users/tebariousbag/school/atlas-low_level_programming/build/Debug/outDebug"
     }
   ]
 }
