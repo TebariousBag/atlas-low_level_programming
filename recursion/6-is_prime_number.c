@@ -1,9 +1,8 @@
 #include "main.h"
-#include "math.h"
 /**
- * is_prime_number - checks if prime number
- * @n: the number
- * Return: 1 or 0
+ * helper - helper function
+ * @n: the number given
+ * @i: parameter to check if prime
  */
 
 int helper(int n, int i)	/* helper function*/
@@ -17,10 +16,18 @@ int helper(int n, int i)	/* helper function*/
 	{
 		return (0);
 	}
-	return helper(n, i + 1);	/* increases i by 1*/
+	return (helper(n, i + 1));	/* increases i by 1*/
 
 }
+
+#include "main.h"
+/**
+ * is_prime_number - checks if prime number
+ * @n: the number
+ * Return: 1 or 0
+ */
+
 int is_prime_number(int n)
 {
-	return helper(n, 2);	/* gives helper i the value of 2*/
+	return (helper(n, 2));	/* gives helper i the value of 2*/
 }
