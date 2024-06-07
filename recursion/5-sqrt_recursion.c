@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 	{
 		return (n);
 	}
-	int divided = n / 2		/* divide n by 2*/
+	int divided = n / 2;	/* divide n by 2*/
 	if (_sqrt_recursion(divided) * _sqrt_recursion(divided) == n)	/* if n divided times itself = itself */
 	{
 	return (_sqrt_recursion(divided);)
