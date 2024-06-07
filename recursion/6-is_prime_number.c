@@ -8,7 +8,7 @@
 
 int helper(int n, int i)	/* helper function*/
 {
-	if (i > sqrt(n))	/* if i is greater than square root of n than its prime*/
+	if (i == n / 2)	/* if i is greater than square root of n than its prime*/
 	{
 		return (1);
 	}
