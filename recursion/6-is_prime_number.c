@@ -8,11 +8,12 @@
 
 int helper(int n, int i)	/* helper function*/
 {
-	if (i == n / 2 || n == 1)	/* if i is eqaul to n/2 or n equal to one its prime*/
+	if (i == n / 2)	/* if i is eqaul to n/2 its prime*/
 	{
 		return (1);
 	}
-	if (n % i == 0)	/*if the remainder of n is 0 than it is not prime*/
+	if (n % i == 0 || n == 1)	/*if the remainder of n is 0 than it is not prime*/
+								/*if n is equal to 1 its not prime*/
 	{
 		return (0);
 	}
