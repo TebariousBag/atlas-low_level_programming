@@ -22,6 +22,7 @@ int helper(int n, int i)
 	{
 		return (i);
 	}
+	return (helper(n, i + 1));
 }
 
 #include "main.h"
@@ -34,7 +35,7 @@ int helper(int n, int i)
 int _sqrt_recursion(int n)
 {
 	{
-	return (helper(n, i + 1));
+	return (helper(n, 2));
 	}
 	else
 	{
