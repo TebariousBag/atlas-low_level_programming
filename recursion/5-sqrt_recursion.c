@@ -18,13 +18,13 @@ int helper(int n, int i)
 	{
 		return (n);
 	}
-	if (multiplied == n)
+	if (multiplied > n) /* if it sorts through all numbers past n than no square root*/
 	{
-		return (i);
+		return (-1);
 	}
-	else
+	else if (multiplied == n)
 	{
-		return (-1);	/* no square root*/
+		return (i);	/* square root*/
 	}
 	return (helper(n, i + 1));
 }
@@ -38,7 +38,5 @@ int helper(int n, int i)
 
 int _sqrt_recursion(int n)
 {
-	{
 	return (helper(n, 2));
-	}
 }
