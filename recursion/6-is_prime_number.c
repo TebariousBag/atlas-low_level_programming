@@ -3,6 +3,7 @@
  * helper - helper function
  * @n: the number given
  * @i: parameter to check if prime
+ * Return: 1 or 0
  */
 
 int helper(int n, int i)	/* helper function*/
@@ -24,7 +25,7 @@ int helper(int n, int i)	/* helper function*/
 /**
  * is_prime_number - checks if prime number
  * @n: the number
- * Return: 1 or 0
+ * Return: helper
  */
 
 int is_prime_number(int n)
