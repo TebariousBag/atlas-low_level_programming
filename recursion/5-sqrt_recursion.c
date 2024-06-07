@@ -21,4 +21,8 @@ int _sqrt_recursion(int n)
 	{
 	return (_sqrt_recursion(divided));
 	}
+	else
+	{
+		return (-1);	/* no square root*/
+	}
 }
