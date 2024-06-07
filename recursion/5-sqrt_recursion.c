@@ -22,6 +22,10 @@ int helper(int n, int i)
 	{
 		return (i);
 	}
+	else
+	{
+		return (-1);	/* no square root*/
+	}
 	return (helper(n, i + 1));
 }
 
@@ -36,9 +40,5 @@ int _sqrt_recursion(int n)
 {
 	{
 	return (helper(n, 2));
-	}
-	else
-	{
-		return (-1);	/* no square root*/
 	}
 }
