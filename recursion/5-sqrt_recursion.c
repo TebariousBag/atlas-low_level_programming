@@ -18,7 +18,7 @@ int helper(int n, int i)
 	{
 		return (n);
 	}
-	if (multiplied > n) /* if it sorts through all numbers past n than no square root*/
+	if (multiplied > n) /* sorts through all numbers past n than no square root*/
 	{
 		return (-1);
 	}
