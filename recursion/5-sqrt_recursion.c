@@ -1,13 +1,14 @@
 #include "main.h"
 /**
- * _sqrt_recursion - returns square root
- * @n: the number
+ * helper - helper function
+ * @n: number
+ * @i: parameter to check
  * Return: result or -1
  */
 
-int _sqrt_recursion(int n)
+int helper(int n, int i)
 {
-	int divided = n / 2;	/* divide n by 2*/
+	int multiplied = i * i;
 
 	if (n < 0)	/* base case for less than 0*/
 	{
@@ -17,9 +18,23 @@ int _sqrt_recursion(int n)
 	{
 		return (n);
 	}
-	if (_sqrt_recursion(divided) * _sqrt_recursion(divided) == n)	/* if n divided by 2, times itself = itself */
+	if (multiplied == n)
 	{
-	return (_sqrt_recursion(divided));
+		return (i);
+	}
+}
+
+#include "main.h"
+/**
+ * _sqrt_recursion - returns square root
+ * @n: the number
+ * Return: result or -1
+ */
+
+int _sqrt_recursion(int n)
+{
+	{
+	return (helper(n, i + 1));
 	}
 	else
 	{
