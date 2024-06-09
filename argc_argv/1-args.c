@@ -3,7 +3,7 @@
 *main - counts arguments
 *@argc: parameter
 *@argv: parameter
-Return: arg count num
+*Return: 0
 */
 
 int main(int argc, char *argv[])
