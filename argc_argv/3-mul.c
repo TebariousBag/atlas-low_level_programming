@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main(int argc; char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 3)	/*need 2 arguments else error*/
 	{
