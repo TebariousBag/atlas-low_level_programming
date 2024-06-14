@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s1 = "";
 	}
-	if (s2 == NULL);
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	combined = malloc(sizeof(char) * totallen +1);
 	if (combined == NULL)
 	{
-		return (NULL;);
+		return (NULL);
 	}
 	for (count = 0; s1[count]; count++)
 	{
