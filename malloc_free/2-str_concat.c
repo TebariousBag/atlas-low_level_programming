@@ -15,36 +15,36 @@ char *str_concat(char *s1, char *s2)
 	int s2len = 0;
 	int index;
 
-	if (s1 == NULL)
+	if (s1 == NULL) /*if null empty string*/
 	{
 		s1 = "";
 	}
-	if (s2 == NULL)
+	if (s2 == NULL)	/*if null empty string*/
 	{
 		s2 = "";
 	}
-	while (s1[s1len] != '\0')
+	while (s1[s1len] != '\0')	/*find end of s1*/
 	{
 		s1len++;
 	}
-	while (s2[s2len] != '\0')
+	while (s2[s2len] != '\0')	/*find end of s2*/
 	{
 		s2len++;
 	}
-	totallen = s1len + s2len + 1;
+	totallen = s1len + s2len + 1;	/*combine length s1+s2 and +1 for null*/
 
-	combined = malloc(sizeof(char) * totallen);
-	if (combined == NULL)
+	combined = malloc(sizeof(char) * totallen);	/*memory for combine string*/
+	if (combined == NULL)	/*if null not enough memory*/
 	{
 		return (NULL);
 	}
-	for (index = 0; index <= s1len; index++)
+	for (index = 0; index <= s1len; index++)	/*add s1*/
 	{
 		combined[index] = s1[index];
 	}
-	for (index = 0; index <= s2len; index++)
+	for (index = 0; index <= s2len; index++)	/*add s2*/
 	{
 		combined[s1len + index] = s2[index];
 	}
-	return (combined);
+	return (combined);	/*return the combined string*/
 }
