@@ -10,8 +10,9 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *combined;
-	int totallen;
-	int count = 0;
+	int totallen = 0;
+	int s1len = 0;
+	int s2len = 0;
 	int index;
 
 	if (s1 == NULL)
@@ -22,25 +23,28 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	while (s1[count] != '\0' || s2[count] != '\0')
+	while (s1[s1len] != '\0')
 	{
-		count++;
-		totallen++;
+		s1len++;
 	}
-	combined = malloc(sizeof(char) * totallen +1);
+	while (s2[s2len] != '\0')
+	{
+		s2len++;
+	}
+	totallen = s1len + s2len + 1;
+
+	combined = malloc(sizeof(char) * totallen);
 	if (combined == NULL)
 	{
 		return (NULL);
 	}
-	for (count = 0; s1[count]; count++)
+	for (index = 0; index <= s1len; index++)
 	{
-		combined[index] = s1[count];
-		index++;
+		combined[index] = s1[index];
 	}
-	for (count = 0; s2[count]; count++)
+	for (index = 0; index <= s2len; index++)
 	{
-		combined[index] = s2[count];
-		index++;
+		combined[s1len + index] = s2[index]
 	}
 	return (combined);
 }
