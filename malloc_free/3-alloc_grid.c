@@ -17,7 +17,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	final = malloc(sizeof(int) * height);	/*make room for rows*/
+	final = malloc(sizeof(int*) * height);	/*make room for rows*/
 
 	if (final == NULL)	/*if null than null*/
 	{
@@ -41,4 +41,3 @@ int **alloc_grid(int width, int height)
 		}
 		return (final);
 	}
-	
