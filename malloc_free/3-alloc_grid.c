@@ -39,6 +39,6 @@ int **alloc_grid(int width, int height)
 		{
 			final[row][col] = 0;	/*initialize all to 0*/
 		}
-		return (final);
 	}
+	return (final);
 }
