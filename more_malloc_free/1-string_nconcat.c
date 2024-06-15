@@ -37,14 +37,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (index = 0; index < lens1; index++)
+	lentotal = 0;
+	for (index = 0; s1[index]; index++)
 	{
-		combined[lens1 + index] = s1[index];
+		combined[lentotal++] = s1[index];
 	}
-	for (index = 0; index < lens2; index++)
+	for (index = 0; s2[index]; index++)
 	{
-		combined[lens2 + index] = s2[index];
+		combined[lentotal++] = s2[index];
 	}
-	combined[lentotal - 1] = '\0';
+	combined[lentotal] = '\0';
 	return (combined);
 }
