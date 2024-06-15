@@ -15,37 +15,37 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int lens1 = 0, lens2 = 0, lentotal = 0;
 	unsigned int index;
 
-	if (s1 == NULL)
+	if (s1 == NULL)	/*if null treat as empty*/
 	{
 		s1 = "";
 	}
-	if (s2 == NULL)
+	if (s2 == NULL)	/*if null treat as empty*/
 	{
 		s2 = "";
 	}
-	while (s1[lens1])
+	while (s1[lens1])	/*find length of s1*/
 	{
 		lens1++;
 	}
-	while (s2[lens2] && lens2 < n)
+	while (s2[lens2] && lens2 < n)	/*find length of s2 with n bytes*/
 	{
 		lens2++;
 	}
-	lentotal = lens1 + lens2 + 1;
-	combined = malloc(sizeof(char) * lentotal);
-	if (combined == NULL)
+	lentotal = lens1 + lens2 + 1;	/*total of memory plus null byte*/
+	combined = malloc(sizeof(char) * lentotal);	/*make memory*/
+	if (combined == NULL)	/*if fail null*/
 	{
 		return (NULL);
 	}
 	lentotal = 0;
-	for (index = 0; s1[index]; index++)
+	for (index = 0; s1[index]; index++)	/*add s1 to combined*/
 	{
 		combined[lentotal++] = s1[index];
 	}
-	for (index = 0; s2[index] && index < n; index++)
+	for (index = 0; s2[index] && index < n; index++)	/*add s2 of n bytes to combined*/
 	{
 		combined[lentotal++] = s2[index];
 	}
-	combined[lentotal] = '\0';
+	combined[lentotal] = '\0';	/*add null byte*/
 	return (combined);
 }
