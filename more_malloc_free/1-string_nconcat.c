@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		combined[lentotal++] = s1[index];
 	}
-	for (index = 0; s2[index]; index++)
+	for (index = 0; s2[index] && index < n; index++)
 	{
 		combined[lentotal++] = s2[index];
 	}
