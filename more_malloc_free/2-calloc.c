@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * calloc - allocate memory for an array
- * @nmeb: parameter number of elements
+ * @nmemb: parameter number of elements
  * @size: parameter of bytes
  * Return: pointer to the memory or null
  */
