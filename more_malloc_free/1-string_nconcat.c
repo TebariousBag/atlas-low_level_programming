@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (index = 0; index < lens1; index++)
 	{
-		combined[lens1 + index] = s2[index];
+		combined[lens1 + index] = s1[index];
 	}
 	for (index = 0; index < lens2; index++)
 	{
