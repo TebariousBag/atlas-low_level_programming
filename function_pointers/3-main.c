@@ -1,1 +1,33 @@
 #include <stdio.h>
+#include "3-calc.h"
+#include <stdlib.h>
+
+/**
+ * main - main function
+ * @argc: argument
+ * @argv: an aaray of arguments
+ * Return: a lot of returns
+ */
+
+int main(int argc, char *argv[])
+{
+	int (*oprt)(int, int);
+
+	if (argc != 4)	/*if there aren't 4 files */
+	{
+		printf("error\n");
+		exit(98);
+	}
+	oprt = get_op_func(argv[2]);
+
+	if (!oprt)
+	/*if operator isnt one we assigned*/
+	{
+		printf("error\n");
+		exit(99);
+	}
+
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
+	/*convert to integer*/
+	return (0);
+}
