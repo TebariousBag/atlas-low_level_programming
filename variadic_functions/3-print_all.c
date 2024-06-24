@@ -33,7 +33,6 @@ void print_all(const char * const format, ...)
 					str = va_arg(mylist, char *);
 					if (!str)
 					str = "(nil)";
-					else
 					printf("%s%s", sep, str);
 					break;
 				default:
