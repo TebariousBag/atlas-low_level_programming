@@ -25,5 +25,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 	}
 	va_end(mylist);	/*free up mylist*/
-	_putchar('\n');
+	printf("\n");
 }
