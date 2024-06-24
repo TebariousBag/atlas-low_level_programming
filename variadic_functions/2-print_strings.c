@@ -19,11 +19,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (t = 0; t < n; t++)	/*iterate through*/
 	{
 		string = va_arg(mylist, char *);
-		if (!string)	/*if string is null then it equals nil*/
-			string = "nil";
-		if (separator != NULL && t < n)
+		
+		if (separator != NULL && t > 0)
 		/*if separator is not null and its greater than zero print separator*/
-			printf("%s", separator);
+		printf("%s", separator);
+		if (!string)	/*if string is null then it equals nil*/
+		string = "nil";
 		else	/*else print string*/
 			printf("%s", string);
 	}
