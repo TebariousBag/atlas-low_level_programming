@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		string = va_arg(mylist, char *);
 		if (!string)	/*if string is null then it equals nil*/
 			string = "nil";
-		if (separator != NULL && t > 0)
+		if (separator != NULL && t < n)
 		/*if separator is not null and its greater than zero print separator*/
 			printf("%s", separator);
 		else	/*else print string*/
