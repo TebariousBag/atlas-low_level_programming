@@ -19,10 +19,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		if (t > 0 && separator != NULL)
 		/*if its not the first arg, and seperator not null*/
-		{
 			printf("%s", separator);	/*printe the sep*/
 		printf("%d", va_arg(mylist, int));	/*otherwise print each arg*/
-		}
 	}
 	va_end(mylist);	/*free up mylist*/
 	printf("\n");
