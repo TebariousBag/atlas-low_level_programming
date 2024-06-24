@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 
 	if (format)
 	{
-		while(format[t])
+		while (format[t])
 		{
 			switch (format[t])
 			{
@@ -33,7 +33,9 @@ void print_all(const char * const format, ...)
 					str = va_arg(mylist, char *);
 					if (!str)
 						str = "(nil)";
-					printf("%s%s", sep, str);
+					else
+						printf("%s%s", sep, str);
+						break;
 				default:
 					t++;
 					continue;
