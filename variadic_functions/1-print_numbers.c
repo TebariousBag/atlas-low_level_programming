@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_numbers - prints numbers followed by a new line
- * @seperator: string to be printed
+ * @separator: string to be printed
  * @n: number of ints to be passed
  * Return: void
  */
