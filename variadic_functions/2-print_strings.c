@@ -23,8 +23,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (separator != NULL && t > 0)
 		/*if separator is not null and its greater than zero print separator*/
 		printf("%s", separator);
-		if (!string)	/*if string is null then it equals nil*/
-		string = "nil";
+		if (string == NULL)	/*if string is null then it equals nil*/
+		printf("nil");
 		else	/*else print string*/
 			printf("%s", string);
 	}
