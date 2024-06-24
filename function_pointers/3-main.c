@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)	/*if there aren't 4 files */
 	{
-		printf("error\n");
+		printf("Error\n");
 		exit(98);
 	}
 	oprt = get_op_func(argv[2]);
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	if (!oprt)
 	/*if operator isnt one we assigned*/
 	{
-		printf("error\n");
+		printf("Error\n");
 		exit(99);
 	}
 
