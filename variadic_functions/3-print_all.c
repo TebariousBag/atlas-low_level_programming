@@ -6,7 +6,7 @@
 
 void print_all(const char * const format, ...)
 {
-	int t;
+	int t = 0;
 	char *str;
 	char *sep = "";
 
