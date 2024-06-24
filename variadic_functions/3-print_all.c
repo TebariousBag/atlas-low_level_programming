@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 			switch (format[t])
 			{
 				case 'c':
-					printf("%s%c", sep, va_arg(mylist, int));
+					printf("%s%c", sep, va_arg(mylist, char));
 					break;
 				case 'i':
 					printf("%s%d", sep, va_arg(mylist, int));
