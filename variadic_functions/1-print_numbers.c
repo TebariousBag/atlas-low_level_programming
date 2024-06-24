@@ -17,7 +17,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (t = 0; t < n; t++)	/*iterate through list*/
 	{
-		if (t > 0 && !separator)	
+		if (t > 0 && !separator)
 		/*if its not the first arg, and seperator not null*/
 		{
 			printf("%s", separator);	/*printe the sep*/
