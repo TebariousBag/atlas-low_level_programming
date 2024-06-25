@@ -12,14 +12,15 @@
 int main(int argc, char *argv[])
 {
 	int (*oprt)(int, int);
-
+	int num;
 	if (argc != 4)	/*if there aren't 4 files */
 	{
 		printf("Error\n");
 		exit(98);
 	}
 	oprt = get_op_func(argv[2]);
-	if ((*argv[2] == '%' || *argv[2] == '/') && argv[3] == 0)
+	num = atoi(argv[3]);
+	if ((*argv[2] == '%' || *argv[2] == '/') && num == 0)
 	{
 		printf("Error\n");
 		exit(100);
