@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		sum += atoi(argv[n]);	/*turn string to int, and add all argv to sum*/
+		sum += atoi(argv[a]);	/*turn string to int, and add all argv to sum*/
 	}
 	printf("%d\n", sum);
 
