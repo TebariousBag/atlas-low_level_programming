@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int (*oprt)(int, int);
 	int num;
-	
+
 	if (argc != 4)	/*if there aren't 4 files */
 	{
 		printf("Error\n");
