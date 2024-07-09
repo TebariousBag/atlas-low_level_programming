@@ -6,6 +6,7 @@
  * @text_content: string to add to the end of the file
  * Return: 1 if the file exists, -1 if function fails, does not exist or fails
  */
+
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int op;
@@ -34,3 +35,4 @@ int append_text_to_file(const char *filename, char *text_content)
 	close(op);
 
 	return (1);
+}
