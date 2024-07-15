@@ -16,13 +16,16 @@ hash_table_t *hash_table_create(unsigned long int size)
 	{
 		return (NULL);
 	}
+
 	ht->size = size;	/*size equals variable size*/
 	ht->array = malloc(sizeof(hash_node_t *) * size);
 	/*make space for the array*/
+
 	if (ht->array == NULL)	/*if array empty*/
 	{
 		return (NULL);
 	}
+	
 	for (i = 0; i < size; i++)
 	{
 		ht->array[i] = NULL;	/*add null to each spot to create the table*/
