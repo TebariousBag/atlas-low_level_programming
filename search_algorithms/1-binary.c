@@ -6,7 +6,6 @@
  * @size: size of array
  * @value: the value to search for
  * Return: the value or -1
- * 
  */
 
 int binary_search(int *array, size_t size, int value)
@@ -29,7 +28,7 @@ int binary_search(int *array, size_t size, int value)
 			printf("%d\n", array[i]);
 			if (array[middle] < value) /*see if we need to search right*/
 			{
-				left = middle +1;
+				left = middle + 1;
 			}
 			else if (array[middle] > value) /*if we need to search left*/
 			{
